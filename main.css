@@ -302,3 +302,74 @@ snow:after,
 		transform: translateY(40rem);
 	}
 }
+
+
+/* Quiz CSS *********************************************************************************************/
+/* ******************************************************************************************************/
+
+.score { 
+    color: rgb(198, 157, 68);
+    font-size: 10rem;
+    font-family: Brush Script MT;
+    font-weight: lighter;
+    margin: 0.6rem;
+    line-height: 8rem;
+}
+
+.question { 
+    position: relative;
+    width: 100vw;                                    /*100% of the view window width*/                                 
+    text-align: center;
+    color: rgb(198, 157, 68);
+    text-shadow: 0 0 0.5rem rgb(0, 0, 0); 
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5rem;
+}
+
+
+.answerwrapper {
+    display: flex;
+    position: absolute;
+    margin-inline-start: 10vw;
+    margin-inline-end: 10vw;
+    place-items: center;
+    height: 50vh;
+    margin: 10% auto 0 auto;
+}
+
+
+.slateA {
+    position: relative;
+    width: 20vw;    
+}
+
+.slateB {
+    position: relative;
+    width: 40vw;
+}
+
+.slate img {
+    height: 40vw;
+}
+
+button {
+height: 8vh;
+    width: 30vw;
+    outline: none;
+    background: rgb(198, 157, 68);
+    border: black solid 0.25rem;
+    color: black;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0.75rem;
+}
+
+button:hover {
+  background: radial-gradient(rgb(255, 255, 255),rgb(252, 189, 0));
+}
+
+button:active {
+    background: radial-gradient(rgb(49, 44, 13),rgb(252, 189, 0));
+    color: white;
+  }
