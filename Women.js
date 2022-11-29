@@ -17,7 +17,7 @@ let questions = {
     books: "Who wrote ",
     quotes: "Who said ",
     number_of_siblings: "Who has this many siblings: ",
-    school: "Who went to this school: "
+    school: "Who studied here: "
 }
 
 
@@ -74,9 +74,30 @@ let person2 = {
     school:  "Denver East High School",
 }
 
+let person3 = {
+  photo: "assets/Khan door.png",
+  first_name: "Noor",
+  last_name: "Inayat Khan",
+  famous_for: "being the first Muslim female war hero, Khan was an undercover operative in France who was betrayed by her colleagues, tortured and executed but never gave away any Allied secrets",
+  dob: Date("1914-01-01").toDateString,
+  dod: Date("1944-9-13").toDateString,
+  age_at_death: 30,
+  famous_decade: "1940s",
+  zodiac_sign: "Capricorn ",
+  birth_place: "Moscow",
+  profession: "Radio operator for the Special Operations Executive (SEO)",
+  height: null,
+  maiden_name: null,
+  aka: "'Madeleine'",
+  books: "Twenty Jataka Tales",
+  quotes: null,
+  number_of_siblings: 3,
+  school:  "Denver East High School",
+}
+
 // start some variables globally -outside of functions and loops etc- to populate inside the functions later
 
-let people = [person1, person2];
+let people = [person1, person2, person3];
 let ques;
 let ans;
 let personRight;
