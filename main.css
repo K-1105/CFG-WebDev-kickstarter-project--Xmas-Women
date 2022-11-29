@@ -1,0 +1,304 @@
+
+
+body {
+    background-color: rgb(24, 36, 28);
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* HEADER******************************************************************************************* */
+.header {
+    width: 100vw;                                    /*100% of the view window width*/                                 
+    text-align: center;
+    color: rgb(198, 157, 68);
+    text-shadow: 0 0 0.5rem rgb(0, 0, 0); 
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header h1 {
+margin: 0.6rem;
+}
+
+.header h2 {
+    font-size: 12rem;
+    font-family: Brush Script MT;
+    font-weight: lighter;
+    margin: 0.6rem;
+    line-height: 8rem;
+}
+
+.header p {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    font-size: 1.5rem;
+    display: block;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+    margin-inline-start: 30vw;
+    margin-inline-end: 30vw;
+    
+}
+
+
+/* DOOR GALLERY******************************************************************************************* */
+/* WRAPPER FOR DOOR GALLERY * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.box_for_doors {
+    display: grid;
+    place-items: center;
+    margin-inline-start: 15vw;
+    margin-inline-end: 15vw;
+
+}
+
+/* GRID OF DOOR GALLERY * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.door_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;   
+}
+
+/* DOOR COMPONENTS *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  * */
+.door_pane,
+.door_frame {
+    width: inherit;
+    height: inherit;
+}
+
+/* DOOR FRAME WRAPPER- holds the red door wrapper  *   *   *   *   *   *   *   *   *   *   *   *   *   */
+.door_frame {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    position: relative;
+    width: 14rem;
+    height: 20rem;
+    background-image: url("assets/red\ door\ frame.png");
+    background-size: 14rem;
+    background-repeat: no-repeat;
+
+}
+
+/* DOOR WRAPPER- holds door number, pane and everything inside the door   *   *   *   *   *   *   *   */
+.door {
+    margin-top: 2.3rem;
+    margin-bottom: 0rem;
+    margin-left: 2.8rem;
+    margin-right: 2.8rem;
+    position: relative;
+    width: 8.3rem;
+    height: 17rem;
+    perspective: 50rem;
+    z-index: 666;
+}
+
+/* DOOR COMPONENTS    *    *    *    *    *    *    *    */
+.door_pane { 
+    position: absolute;
+    background-image: url("assets/red\ door\ long.png");
+    background-repeat: no-repeat;
+    background-size: 8.3rem;
+    transform-style: preserve-3d;
+    transform-origin: 0;
+    perspective: 50rem;
+    cursor: grabbing;
+    transition: all 1s ease-out;
+}
+
+.door_number {
+    position: absolute;
+    text-align: center;
+    margin: 0rem;
+    top: 25%;
+    left: 38%;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.8rem;
+    text-shadow: 0.1rem 0.1rem 0.05rem rgba(0, 0, 0, 0.50); 
+    color: rgb(100, 76, 23);
+
+}
+
+
+.door:hover .door_pane {
+    background-image: url("assets/red\ door\ long.png");
+    transform: rotateY(-97deg);
+    perspective-origin: 0;
+    transition: all 0.25s ease-in;
+}
+
+.door:hover .door_number {
+    -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+}
+
+.door:hover {
+            z-index: 999;    /* z-index specifies the stack order, high number is shown on top so door can swing open above frame etc*/    
+    }
+   
+
+/* INHABITANT WRAPPER   *    *    *    *    *    *    *    */
+.door_content {
+    position: absolute;
+    width: 8.3rem;
+    height: 17rem;
+    top: 0;
+    left: 0;
+    background: radial-gradient(rgb(255, 255, 255),rgb(252, 189, 0));
+    box-shadow: 0 0 2.5rem 0 rgba(0, 0, 0, 0.15), inset 0 0 4rem 1.2rem rgba(0, 0, 0, 0.80);
+    z-index: -2;
+}
+
+/* FIGURE AND CAPTION WRAPPER   *     *     *     *     *     *     *     */
+.door_inhabitant {
+    position: relative;
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center;
+        margin: 10% auto 0 auto;
+
+    z-index: -1;
+}
+
+/* FIGURE AND CAPTION COMPONENTS   *     *     *     *     *     *     */
+.door_inhabitant img {
+    width: 8rem;
+}
+
+.door_inhabitant figcaption {
+    font-size: 1rem;
+    color: white;
+    text-shadow: 0, 0, 0.2rem rgba(0, 0, 0, 1);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+/* instructions for how much to make the inhabitant shake/rotate after the door opens
+    the percentage refers to the duration of the animation (the 100% time can be found below given in seconds)
+    there are two instructions of the same thing, the webkit version allows support for chrome browsers*/
+@-webkit-keyframes shake {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(-2deg);}
+    40% {transform: rotate(2deg);}
+    60% {transform: rotate(-1deg);}
+    80% {transform: rotate(1deg);}
+    100% {transform: rotate(0deg);}
+  }
+
+@keyframes shake {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(-2deg);}
+    40% {transform: rotate(2deg);}
+    60% {transform: rotate(-1deg);}
+    80% {transform: rotate(1deg);}
+    100% {transform: rotate(0deg);}
+  }
+
+/* on hover shake the inhabitant as defined above, again, animation repeated for chrome (webkit) */
+  .door:hover .door_inhabitant {
+    display: inline-block;
+    transform-origin: 50% 100%;
+    -webkit-animation: shake 0.7s;
+            animation: shake 0.7s;
+}
+
+
+/* FOOTER ******************************************************************************************* */
+footer {
+    position: relative;
+    width: 100vw;
+    height: 12rem;  
+    text-align: center;
+    color: rgb(198, 157, 68);
+    text-shadow: 0 0 0.5rem rgb(0, 0, 0); 
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;  
+    background-position: bottom;
+    background-image: url("assets/snow\ floor.png");
+    background-size: 300rem;
+    background-repeat: no-repeat;
+    padding-top: 5rem;
+    z-index: 1000;
+
+}
+
+.footer_text {
+    margin: 0;
+    
+}
+
+
+
+
+/* SNOWFALL****************************************************************************************************** 
+adapted slightly from 'GitHub - costik2020/0015-snow-falling-effect: Effect of snow falling'*/
+
+/* different browser compatibility? */
+*, *:after, *::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* WRAPPER FOR SNOW * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.snow_wrap {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+   }
+
+/* SNOW FLAKES *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  * */
+.snow,
+snow:after,
+.snow:before {
+	content:"";
+    position: absolute;
+    z-index: 666;
+	top: -40rem;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image:
+	radial-gradient(0.25rem 0.25rem at 6.25rem 3rem, #ffffff, transparent),
+	radial-gradient(0.375rem 0.375rem at 12.5rem 9.25rem, #ffffff, transparent),
+	radial-gradient(0.2rem 0.2rem at 18rem 15.5rem, #ffffff, transparent),
+	radial-gradient(0.25rem 0.25rem at 25rem 22rem, #ffffff, transparent),
+	radial-gradient(0.375rem 0.375rem at 30rem 6.25rem, #ffffff, transparent),
+	radial-gradient(0.2rem 0.2rem at 3rem 12.5rem, #ffffff, transparent),
+	radial-gradient(0.25rem 0.25rem at 9.25rem 18rem, #ffffff, transparent),
+	radial-gradient(0.375rem 0.375rem at 15.5rem 25rem, #ffffff, transparent),
+	radial-gradient(0.2rem 0.2rem at 22rem 30rem, #ffffff, transparent);
+	background-size: 40rem 40rem;
+
+	animation: snowAnim 3s linear;
+	animation-iteration-count: infinite;
+}
+
+.snow:after{
+	margin: -273rem;
+	opacity: 0.5;
+	filter: blur(0.12rem);
+	animation-direction: reverse;
+	animation-duration: 6s;
+}
+
+.snow:before{
+	margin: -22rem;
+	opacity: 0.7;
+	filter: blur(0.06rem);
+	animation-direction: reverse;
+	animation-duration: 9s;
+}
+
+@keyframes snowAnim {
+	from{
+		transform: translateY(0);
+	}
+	to{
+		transform: translateY(40rem);
+	}
+}
