@@ -52,7 +52,7 @@ let person2 = {
     photo: "assets/McDaniel door.png",
     first_name: "Hattie",
     last_name: "McDaniel",
-    famous_for: "being the first African-American actor to break the colour barrier and receive an Oscar in 1939 for playing 'Mammy' in 'Gone with the Wind' ",
+    famous_for: "being the first African-American actor to break the colour barrier and receive an Oscar in 1939 for playing 'Mammy' in 'Gone with the Wind'",
     dob: Date("1893-06-10").toDateString,
     dod: Date("1952-10-26").toDateString,
     age_at_death: 59,
@@ -80,10 +80,10 @@ let person3 = {
   last_name: "Inayat Khan",
   famous_for: "being the first Muslim female war hero, Khan was an undercover operative in France who was betrayed by her colleagues, tortured and executed but never gave away any Allied secrets",
   dob: Date("1914-01-01").toDateString,
-  dod: Date("1944-9-13").toDateString,
+  dod: Date("1944-09-13").toDateString,
   age_at_death: 30,
   famous_decade: "1940s",
-  zodiac_sign: "Capricorn ",
+  zodiac_sign: "Capricorn",
   birth_place: "Moscow",
   profession: "Radio operator for the Special Operations Executive (SEO)",
   height: null,
@@ -95,9 +95,186 @@ let person3 = {
   school:  "Denver East High School",
 }
 
+let person4 = {
+  photo: "assets/Franklin door.png",
+  first_name: "Rosalind",
+  last_name: "Franklin",
+  famous_for: "being a member of the team who discovered the double-helix structure of DNA",
+  dob: Date("1920-07-25").toDateString,
+  dod: Date("1958-04-16").toDateString,
+  age_at_death: 37,
+  famous_decade: "1950s",
+  zodiac_sign: "Leo",
+  birth_place: "Notting Hill",
+  profession: "X-ray crystallographer",
+  height: null,
+  maiden_name: null,
+  aka: null,
+  books: "19 papers on coals and carbons, five on DNA and 21 on viruses",
+  quotes: [
+    "'What’s the use of doing all this work if we don't get some fun out of this?'",
+    "'But science and everyday life cannot and should not be separated.'",
+    "'In my view, all that is necessary for faith is the belief that by doing our best we shall succeed in our aims: the improvement of mankind'"
+  ],
+  number_of_siblings: 4,
+  school:  "St Paul's Girls' School",
+}
+
+let person5 = {
+  photo: "assets/Bamber door.png",
+  first_name: "Helen",
+  last_name: "Bamber",
+  famous_for: "being a prominent anti-torture campaigner, who worked with Holocaust survivors in the 1940s and was the first president of Amnesty International in Britain",
+  dob: Date("1925-05-01").toDateString,
+  dod: Date("2014-08-21").toDateString,
+  age_at_death: 89,
+  famous_decade: "1960s",
+  zodiac_sign: "Taurus",
+  birth_place: "Amhurst Park, North London",
+  profession: "psychotherapist and human rights activist",
+  height: null,
+  maiden_name: "'Balmuth'",
+  aka: null,
+  books: null,
+  quotes: [
+    "'There was nothing at times that I could do for the survivors, other than to listen and to bear witness to the rasping out of their story.'",
+    "'There may be ways in which we can work for change. We don't have to do dramatic things or devote our entire lives to it. We can lead normal lives but at the same time try hard not to be bystanders.",
+    "'Our society will be judged by how we respond to those to whom we owe nothing.'"
+  ],
+  number_of_siblings: null,
+  school:  "Tottenham High School",
+}
+
+let person6 = {
+  photo: "assets/Tereshkova door.png",
+  first_name: "Valentina",
+  last_name: "Tereshkova",
+  famous_for: "being the first and youngest women in space in 1963 and remains the only woman to have been on a solo space mission",
+  dob: Date("1937-03-06").toDateString,
+  dod: Date("2004-07-03").toDateString,
+  age_at_death: 85,
+  famous_decade: "1960s",
+  zodiac_sign: "Pisces",
+  birth_place: "Bolshoye Maslennikovo, Russian SFSR, Soviet Union",
+  profession: "cosmonaut",
+  height: null,
+  maiden_name: null,
+  aka: null,
+  books: null,
+  quotes: [
+    "'It doesn't matter what country or what political system you are from. Space brings you together.'",
+    "'Once you've been in space, you appreciate how small and fragile the Earth is.",
+    "'Hey sky, take off your hat, I'm on my way!'"
+  ],
+  number_of_siblings: 2,
+  school:  "Zhukovsky Air Force Engineering Academy",
+}
+
+let person7 = {
+  photo: "assets/Desai door.png",
+  first_name: "Jayaben",
+  last_name: "Desai",
+  famous_for: "leading the worker strikes in the Grunwick factory dispute, where groups of workers of predominately South Asian heritage went on strike to protest unfair working conditions",
+  dob: Date("1933-04-02").toDateString,
+  dod: Date("2010-12-23").toDateString,
+  age_at_death: 77,
+  famous_decade: "1970s",
+  zodiac_sign: "Aries",
+  birth_place: "Dharmaj, Gujarat, India",
+  profession: "film processor",
+  height: null,
+  maiden_name: null,
+  aka: null,
+  books: null,
+  quotes: [
+    "'What you are running is not a factory, it is a zoo. But in a zoo there are many types of animals. Some are monkeys who dance on your fingertips. Others are lions who can bite your head off. We are the lions, Mr Manager.'",
+    "'We have shown that workers like us, new to these shores, will never accept being treated without dignity and respect.",
+    "'A person like me, I am never scared of anybody.'"
+  ],
+  number_of_siblings: null,
+  school:  null,
+}
+
+let person8 = {
+  photo: "assets/Maathai door.png",
+  first_name: "Wangari",
+  last_name: "Maathai",
+  famous_for: "being the first African woman to receive a Nobel Peace Prize, which was for 'contribution to sustainable development, democracy and peace",
+  dob: Date("1910-04-01").toDateString,
+  dod: Date("2011-19-25").toDateString,
+  age_at_death: 71,
+  famous_decade: "1980s",
+  zodiac_sign: "Aries",
+  birth_place: "Ihithe village, Tetu, Nyeri District, Kenya Colony",
+  profession: "social, environmental and political activist and author",
+  height: null,
+  maiden_name: "'Muta'",
+  aka: null,
+  books: "'The Green Belt Movement: Sharing the Approach and the Experience'",
+  quotes: [
+    "'What you are running is not a factory, it is a zoo. But in a zoo there are many types of animals. Some are monkeys who dance on your fingertips. Others are lions who can bite your head off. We are the lions, Mr Manager.'",
+    "'We have shown that workers like us, new to these shores, will never accept being treated without dignity and respect.",
+    "'A person like me, I am never scared of anybody.'"
+  ],
+  number_of_siblings: null,
+  school:  "Mount St. Scholastica",
+}
+
+let person9 = {
+  photo: "assets/Bechdel door.png",
+  first_name: "Alison",
+  last_name: "Bechdel",
+  famous_for: "exposing the inequality on screen between men and women",
+  dob: Date("1960-09-10").toDateString,
+  dod: null,
+  age_at_death: null,
+  famous_decade: "1980s",
+  zodiac_sign: "Virgo",
+  birth_place: "Beech Creek, Pennsylvania",
+  profession: "cartoonist and author",
+  height: null,
+  maiden_name: null,
+  aka: null,
+  books: "'The Essential Dykes to Watch Out for'",
+  quotes: [
+    "'The secret subversive goal of my work is to show that women, not just lesbians, are regular human beings.'",
+    "'I'll watch a movie only if it meets the following criteria: 1. It has to have at least two women in it. 2. Who talk to each other. 3. About something besides a man.'",
+    "'It's our very capacity for self-consciousness that makes us self-destructive!'"
+  ],
+  number_of_siblings: null,
+  school:  "Simon's Rock College",
+}
+
+let person10 = {
+  photo: "assets/Navratilova door.png",
+  first_name: "Martina",
+  last_name: "Navrátilová",
+  famous_for: "being considered among the greatest tennis players of all time and a an outspoken supporter of LGBT rights",
+  dob: Date("1956-10-18").toDateString,
+  dod: null,
+  age_at_death: null,
+  famous_decade: "1980s",
+  zodiac_sign: "Libra",
+  birth_place: "Prague, Czechoslovakia",
+  profession: "professional tennis player",
+  height: "1.73m",
+  maiden_name: "Šubertová",
+  aka: null,
+  books: "'Being Myself'",
+  quotes: [
+    "'The mark of great sportsmen is not how good they are at their best, but how good they are their worst.'",
+    "'The better I get, the more I realize how much better I can get.'",
+    "'Just go out there and do what you have to do.'"
+  ],
+  number_of_siblings: 2,
+  school:  null,
+}
+
+
+
 // start some variables globally -outside of functions and loops etc- to populate inside the functions later
 
-let people = [person1, person2, person3];
+let people = [person1, person2, person3, person4, person5, person6, person7, person8, person9, person10];
 let ques;
 let ans;
 let personRight;
@@ -117,42 +294,40 @@ function random_couple() {
     wrongAns = [personWrong.first_name + " " + personWrong.last_name, personWrong.photo];
   
     
-return personRight
-return personWrong
-return wrongAns;
+return personRight, personWrong, wrongAns;
 };
-
 
 // Function to grab a question and the name -ans- from the arrays at the top*************************************************************************************************
 
-function getRandomQandA(personNum) {
+function getRandomQandA(personRightNum, PersonWrongNum) {
     let questionKeys = Object.keys(questions).splice(3,15);      //get all the keys from the person1 object and list in an array, then splice the array starting at index 3 and taking the next 15 items
     randomQKey = questionKeys[Math.floor(Math.random() * questionKeys.length)];
 
-    while (personNum[randomQKey] == null) {
+    while (personRightNum[randomQKey] == null) {
         randomQKey = questionKeys[Math.floor(Math.random() * questionKeys.length)];
     }
 
-    if (randomQKey == "quotes") {                      //  if the random question is the quotes, pick a random quote from the list
-        ques = questions[randomQKey] + personNum[randomQKey][Math.floor(Math.random() * personNum.quotes.length)] + "?";
-    } else {
-        ques = questions[randomQKey] + personNum[randomQKey] + "?";
+    while (personRightNum[randomQKey] == PersonWrongNum[randomQKey]) {
+      randomQKey = questionKeys[Math.floor(Math.random() * questionKeys.length)];
     }
 
-    ans = [personNum.first_name + " " + personNum.last_name, personNum.photo];
+    if (randomQKey == "quotes") {                      //  if the random question is the quotes, pick a random quote from the list
+        ques = questions[randomQKey] + personRightNum[randomQKey][Math.floor(Math.random() * personRightNum.quotes.length)] + "?";
+    } else {
+        ques = questions[randomQKey] + personRightNum[randomQKey] + "?";
+    }
+
+    ans = [personRightNum.first_name + " " + personRightNum.last_name, personRightNum.photo];
 
 
        
-return randomQKey
-return ques;
-return ans
+return randomQKey, ques, ans;
 };
 
 
-
-
 random_couple()
-getRandomQandA(personRight)
+getRandomQandA(personRight, personWrong)
+
 document.getElementById("answerAFigure").src= personRight.photo;
 document.getElementById("answerBFigure").src= personWrong.photo;
 // console.log(personRight.photo)
@@ -205,7 +380,7 @@ function shuffle(array) {
 
 function NewQuestion() { 
     random_couple()
-    getRandomQandA(personRight)
+    getRandomQandA(personRight, personWrong)
     answers = [ans, wrongAns];
     shuffle(answers);
     
