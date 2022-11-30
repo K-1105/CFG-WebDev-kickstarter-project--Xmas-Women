@@ -1,37 +1,43 @@
-
-
 body {
-    background-color: rgb(24, 36, 28);
+    background-color: #0e264a
+    ;
     font-size: 1rem;
     text-align: center;
 }
 
 /* HEADER******************************************************************************************* */
+
+
 .header {
+    padding-top: 2rem;
     width: 100vw;                                    /*100% of the view window width*/                                 
     text-align: center;
-    color: rgb(198, 157, 68);
-    text-shadow: 0 0 0.5rem rgb(0, 0, 0); 
+    color: rgb(229, 221, 204);
+    text-shadow: 0 0 0.5rem #112123; 
     font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
+
 .header h1 {
+    font-family:'Mountains of Christmas', cursive;
+    font-weight: 700;
 margin: 0.6rem;
 }
 
 .header h2 {
-    font-size: 12rem;
-    font-family: Brush Script MT;
-    font-weight: lighter;
+    font-size: 8rem;
+    font-family:'Mountains of Christmas', cursive;
+    font-weight: 700;
     margin: 0.6rem;
     line-height: 8rem;
 }
 
 .header p {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    font-size: 1.5rem;
+    font-family: 'Poppins';
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: 1.2rem;
     display: block;
     margin-block-start: 0rem;
     margin-block-end: 0rem;
@@ -169,11 +175,11 @@ margin: 0.6rem;
 }
 
 .door_inhabitant figcaption {
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: white;
     text-shadow: 0, 0, 0.2rem rgba(0, 0, 0, 1);
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: Poppins; 
 }
 
 /* instructions for how much to make the inhabitant shake/rotate after the door opens
@@ -208,21 +214,20 @@ margin: 0.6rem;
 
 /* FOOTER ******************************************************************************************* */
 footer {
+
     position: relative;
     width: 100vw;
-    height: 12rem;  
+    height: 20rem;  
     text-align: center;
-    color: rgb(198, 157, 68);
-    text-shadow: 0 0 0.5rem rgb(0, 0, 0); 
-    font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;  
+    color: #4a0e24;
+    font-size: 1rem;
+    font-family: Poppins;  
     background-position: bottom;
-    background-image: url("assets/snow\ floor.png");
-    background-size: 300rem;
+    background-image: url("assets/snow-floor2.png");
+    background-size: 100%;
     background-repeat: no-repeat;
-    padding-top: 5rem;
+    padding-top: 18rem;
     z-index: 1000;
-
 }
 
 .footer_text {
