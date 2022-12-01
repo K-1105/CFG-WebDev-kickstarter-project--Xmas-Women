@@ -7,7 +7,6 @@ body {
 
 /* HEADER******************************************************************************************* */
 
-
 .header {
     padding-top: 2rem;
     width: 100vw;                                    /*100% of the view window width*/                                 
@@ -358,10 +357,10 @@ snow:after,
 }
 
 button {
-height: 8vh;
-    width: 30vw;
+    padding: 1rem 2rem;
+    text-align: center;
     outline: none;
-    background: rgb(198, 157, 68);
+    background: #e0af1a;
     border: black solid 0.25rem;
     color: black;
     font-size: 1.6rem;
@@ -370,11 +369,11 @@ height: 8vh;
 }
 
 button:hover {
-  background: radial-gradient(rgb(255, 255, 255),rgb(252, 189, 0));
+  background: radial-gradient(rgb(233, 205, 120),#e0af1a);
 }
 
 button:active {
-    background: radial-gradient(rgb(49, 44, 13),rgb(252, 189, 0));
+    background: radial-gradient(rgb(#544311),rgb(252, 189, 0));
     color: white;
   }
 
@@ -382,26 +381,47 @@ button:active {
 
 /** Advent Pages **/
 
-  .imageTextContainer {
+  .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 2rem;
-    align-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: space-evenly;
   }
 
 .copyBox
-{  width: 30rem;
+{  width: 35rem;
     padding: 1rem;}
 
-
 .imageBox
-{ padding: 1rem;
+{ 
+    padding: 1rem;
 }
 
 
 .imageStyle {
     border-radius: 50%;
-    padding: 0.5rem;
-    border: 0.5rem solid yellow;
+    padding: 0.2rem;
+    max-width: 100%;
+    height:auto;}
+
+.contentH1 {
+font-family:'Mountains of Christmas', cursive;
+font-weight: 700;
+font-size: 4rem;
+color: rgb(229, 221, 204);
 }
+
+.contentH2 {
+    font-family:'Mountains of Christmas', cursive;
+    font-weight: 700;
+    font-size: 2rem;
+    color: rgb(229, 221, 204);
+    }
+
+.contentP {
+        font-family:'Poppins';
+        font-size: 1rem;
+        color: rgb(229, 221, 204);
+        }
