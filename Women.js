@@ -10,7 +10,7 @@ let questions = {
     famous_decade: "Who was most famous during the ",
     zodiac_sign: "Whose zodiac sign is ",
     birth_place: "Who was born in ",
-    profession: "Whose profession was a ",
+    profession: "Whose was a ",
     height: "Whose height is",
     maiden_name: "Whose maiden name was ",
     aka: "Who is also know as ",
@@ -429,3 +429,14 @@ function answerB_clicked() {
 		let answerB = document.getElementById("answerB").value;
   checkAnswer(answerB);
 }
+
+
+
+// come back to this, not to simple!
+
+// if (currentScore == 1) {
+//   document.getElementById("score").color = rgba(252, 189, 0, 0)
+//   setTimeout(() => {
+//     document.getElementById("score").color = "red"
+//   }, 500);
+// }
