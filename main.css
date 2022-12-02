@@ -234,10 +234,10 @@ button:active {
       }
 
 
-.take_quiz_btn {
-    height: 8vh;
-    width: 25vw;
-    font-size: 1.8vh;
+.medium_btn {
+    height:max-content;
+    width: max-content;
+    font-size: 2vh;
 }
 
 
