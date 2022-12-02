@@ -138,7 +138,7 @@ let person5 = {
   books: null,
   quotes: [
     "'There was nothing at times that I could do for the survivors, other than to listen and to bear witness to the rasping out of their story.'",
-    "'There may be ways in which we can work for change. We don't have to do dramatic things or devote our entire lives to it. We can lead normal lives but at the same time try hard not to be bystanders.",
+    "'There may be ways in which we can work for change. We don't have to do dramatic things or devote our entire lives to it. We can lead normal lives but at the same time try hard not to be bystanders.'",
     "'Our society will be judged by how we respond to those to whom we owe nothing.'"
   ],
   number_of_siblings: null,
@@ -271,7 +271,8 @@ let person10 = {
 }
 
 
-
+// Code start*******************************************************************************************************************************************************************
+// *****************************************************************************************************************************************************************************
 // start some variables globally -outside of functions and loops etc- to populate inside the functions later
 
 let people = [person1, person2, person3, person4, person5, person6, person7, person8, person9, person10];
@@ -394,17 +395,45 @@ function NewQuestion() {
 }
 
 // Function to deduct or add points and update the score in the HTML
+// ***************************************************************************************
 function adjustScore(isCorrect) {
-    debugger;
-    if (isCorrect) {
-      currentScore++;
-    } else {
-      if (currentScore > 0) {
-        currentScore--;
-        }
-    }
-    document.getElementById("score").innerHTML = currentScore;
+  debugger;
+  if (isCorrect) {
+    currentScore++;
+
+    // make score flash green when correct 
+    document.getElementById("score").style.color = "green";
+    setTimeout(() => {
+      document.getElementById("score").style.color = "rgb(252, 189, 0)";}, 300);
+  
+    
+  } else {
+    if (currentScore > 0) {
+      currentScore--;
+
+      document.getElementById("score").style.color = "red";
+      setInterval(function() {
+        document.getElementById("score").style.color = "rgb(252, 189, 0)";}, 300);
+      }
   }
+  // edit the HTML score value
+  document.getElementById("score").innerHTML = currentScore;
+  // make progress bar increase 1/12 fraction
+  document.getElementById("progressbar").style.width = currentScore*8.33 + "%";
+
+
+  // Code to new page when score of 12 is reached***************************************************************************
+  if (currentScore == 12) {
+
+    document.getElementById("score").style.backgroundColor = "rgb(252, 189, 0)";
+    document.getElementById("score").style.color = "#0e264a";
+
+    setInterval(() => {
+      window.location.href = "bonus.html";
+    }, 1800);
+
+  } 
+}
 
 
 // Function to trigger update score and make a new question for correct answer or alert for a wrong answer
@@ -429,14 +458,3 @@ function answerB_clicked() {
 		let answerB = document.getElementById("answerB").value;
   checkAnswer(answerB);
 }
-
-
-
-// come back to this, not to simple!
-
-// if (currentScore == 1) {
-//   document.getElementById("score").color = rgba(252, 189, 0, 0)
-//   setTimeout(() => {
-//     document.getElementById("score").color = "red"
-//   }, 500);
-// }

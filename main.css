@@ -216,7 +216,7 @@ button {
     text-align: center;
     outline: none;
     background: #e0af1a;
-    border: black solid 0.25rem;
+    border: black solid 0.2rem;
     color: black;
     font-size: 2.5vh;
     font-family: Poppins;
@@ -235,8 +235,9 @@ button:active {
 
 
 .take_quiz_btn {
-    height: 10vh;
-    width: 30vw;
+    height: 8vh;
+    width: 25vw;
+    font-size: 1.8vh;
 }
 
 
@@ -265,7 +266,7 @@ footer {
 
 
 
-/* SNOWFALL****************************************************************************************************** 
+/* SNOWFALL******************************************************************************************** 
 adapted slightly from 'GitHub - costik2020/0015-snow-falling-effect: Effect of snow falling'*/
 
 /* different browser compatibility? */
@@ -339,14 +340,19 @@ snow:after,
 /* Quiz CSS *********************************************************************************************/
 /* ******************************************************************************************************/
 
-.score { 
+.score_board { 
     position: relative;
     color: rgb(252, 189, 0);
     font-size: 8vh;
     font-family:'Mountains of Christmas', cursive;
     line-height: 6vh;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin: 2vh;
+    padding: 2vh 20vw;
+    text-align: center;
+}
+
+.progress {
+    margin: 0vh 0vw 4vh;
 }
 
 .quiz_header {
@@ -394,7 +400,7 @@ snow:after,
 
 
 
-/** Advent Pages **/
+/** Advent Pages ***********************************************************************************************/
 
   .container {
     display: flex;
