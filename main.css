@@ -1,9 +1,63 @@
 body {
-    background-color: #0e264a
-    ;
-    font-size: 1vh;
+    background-color: #0e264a;
+    font-size: 2vh;
     text-align: center;
 }
+
+/* NAVBAR******************************************************************************************* */
+.navbar {
+    font-family: 'Poppins';
+    color: rgb(229, 221, 204);
+    z-index: 3;
+    --bs-navbar-padding-y: 0.0rem
+}
+
+.nav-item {
+    font-family: 'Poppins';
+    color: rgb(229, 221, 204);
+}
+
+.navbar-custom {
+    --bs-navbar-color: rgba(229, 221, 204, 0.55);
+    --bs-navbar-hover-color: rgba(229, 221, 204, 0.75);
+    --bs-navbar-disabled-color: rgba(229, 221, 204, 0.25);
+    --bs-navbar-active-color: rgb(229, 221, 204);
+    --bs-navbar-brand-color: rgb(229, 221, 204);
+    --bs-navbar-brand-hover-color: rgb(229, 221, 204);
+    --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
+    --bs-bg-opacity: 1;
+    background-color: #e0ae1a14;;
+}
+
+.dropdown-menu {
+    background-color: #e0ae1a14;;
+}
+
+.dropdown-item {
+    color: rgb(229, 221, 204);
+}
+
+.form-control {
+    background-color: rgb(229, 221, 204);
+}
+
+.btn-outline-success {
+    --bs-btn-color: rgb(229, 221, 204);
+    --bs-btn-border-color: rgb(229, 221, 204);
+    --bs-btn-hover-color: #0e264a;
+    --bs-btn-hover-bg: rgb(229, 221, 204);
+    --bs-btn-hover-border-color: rgb(229, 221, 204);
+    --bs-btn-focus-shadow-rgb: 25,135,84;
+    --bs-btn-active-color: #0e264a;
+    --bs-btn-active-bg: rgb(229, 221, 204);
+    --bs-btn-active-border-color: rgb(229, 221, 204);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: rgb(229, 221, 204);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: rgb(229, 221, 204);
+    --bs-gradient: none
+}
+
 
 /* HEADER******************************************************************************************* */
 
@@ -209,8 +263,6 @@ body {
 
 button {
     position: relative;
-    height: 10vh;
-    width: 33vw;
     padding: 1vh 2vh;
     object-fit: contain;
     text-align: center;
@@ -233,11 +285,16 @@ button:active {
     color: white;
       }
 
-
+    
 .medium_btn {
     height:max-content;
     width: max-content;
     font-size: 2vh;
+}
+
+.quiz_btn {
+    height: 10vh;
+    width: 33vw;
 }
 
 
@@ -402,8 +459,9 @@ snow:after,
 
 /** Advent Pages ***********************************************************************************************/
 
-  .container {
+.container {
     display: flex;
+    min-height: 79vh;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
@@ -422,6 +480,9 @@ snow:after,
 
 
 .imageStyle {
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: top;
     border-radius: 50%;
     padding: 0.2rem;
     max-width: 100%;

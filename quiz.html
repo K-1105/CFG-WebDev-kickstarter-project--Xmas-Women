@@ -23,8 +23,41 @@
     <!-- SNOW WINDOW ******************************************************************************************************* -->
     <div class="snow_wrap">
         <div class="snow"></div>
+        
+        <!-- NAV BAR**************************************************************************************************** -->
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/quiz.html">Quiz</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Biographies
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/dayone.html">Emmiline Pankhurst</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Ada Lo</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
 
-
+        <!-- Quiz intro and question*************************************************************************************************** -->
         <div class="quiz_header">
             <p>Score 12 correct answers to get a surprise!</p>
 
@@ -44,16 +77,16 @@
         </div>
 
 
-
+        <!-- answers*************************************************************************************************** -->
         <div class="answerwrapper">
             <div class="slate">
                 <img id="answerAFigure"  alt="a portrait of answer A">
-                <button type="button" id="answerA" onclick="answerA_clicked()"></button>
+                <button class= "quiz_btn" type="button" id="answerA" onclick="answerA_clicked()"></button>
             </div>
 
             <div class="slate">
                 <img id="answerBFigure"  alt="a portrait of answer B">
-                <button type="button" id="answerB" onclick="answerB_clicked()"></button>
+                <button class= "quiz_btn" type="button" id="answerB" onclick="answerB_clicked()"></button>
             </div>
         </div>
 
