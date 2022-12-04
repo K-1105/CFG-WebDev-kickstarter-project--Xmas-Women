@@ -1,5 +1,5 @@
 # christmas-cfg-project
-<img alt="AUR last modified" src="https://img.shields.io/aur/last-modified/google-chrome"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/MollyRushton/christmas-cfg-project"><img alt="GitHub repo file count" src="https://img.shields.io/github/directory-file-count/MollyRushton/christmas-cfg-project">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/MollyRushton/christmas-cfg-project"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/MollyRushton/christmas-cfg-project"><img alt="GitHub repo file count" src="https://img.shields.io/github/directory-file-count/MollyRushton/christmas-cfg-project">
 
 
 [placeholder for link](https://example.com)
