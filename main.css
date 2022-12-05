@@ -504,6 +504,13 @@ color: rgb(229, 221, 204);
 
 .contentP {
         font-family:'Poppins';
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: rgb(229, 221, 204);
+        text-align: left;
         }
+
+.factTitle {
+        font-family:'Mountains of Christmas', cursive;
+        font-size: 1.5rem;
+        color: rgb(229, 221, 204);
+}

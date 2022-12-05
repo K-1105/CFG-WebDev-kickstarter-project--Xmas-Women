@@ -92,7 +92,7 @@ let person3 = {
   books: "Twenty Jataka Tales",
   quotes: null,
   number_of_siblings: 3,
-  school:  "Denver East High School",
+  school:  "Salle Cortot",
 }
 
 let person4 = {
@@ -152,7 +152,7 @@ let person6 = {
   famous_for: "being the first and youngest women in space in 1963 and remains the only woman to have been on a solo space mission",
   dob: Date("1937-03-06").toDateString,
   dod: Date("2004-07-03").toDateString,
-  age_at_death: 85,
+  age_at_death: null,
   famous_decade: "1960s",
   zodiac_sign: "Pisces",
   birth_place: "Bolshoye Maslennikovo, Russian SFSR, Soviet Union",
