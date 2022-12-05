@@ -454,6 +454,7 @@ function adjustScore(isCorrect) {
 
     document.getElementById("score").style.backgroundColor = "rgb(252, 189, 0)";
     document.getElementById("score").style.color = "#0e264a";
+    alert("You win!");
 
     setInterval(() => {
       window.location.href = "bonus.html";
