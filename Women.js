@@ -212,9 +212,9 @@ let person8 = {
   aka: null,
   books: "'The Green Belt Movement: Sharing the Approach and the Experience'",
   quotes: [
-    "'What you are running is not a factory, it is a zoo. But in a zoo there are many types of animals. Some are monkeys who dance on your fingertips. Others are lions who can bite your head off. We are the lions, Mr Manager.'",
-    "'We have shown that workers like us, new to these shores, will never accept being treated without dignity and respect.",
-    "'A person like me, I am never scared of anybody.'"
+    "'Human rights are not things that are put on the table for people to enjoy. These are things you fight for and then you protect'",
+    "'The generation that destroys the environment is not the generation that pays the price. That is the problem.",
+    "'There are opportunities even in the most difficult moments.'"
   ],
   number_of_siblings: null,
   school:  "Mount St. Scholastica",
