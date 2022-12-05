@@ -519,3 +519,9 @@ color: rgb(229, 221, 204);
         font-size: 1.5rem;
         color: rgb(229, 221, 204);
 }
+
+.youtube {
+    position: relative;
+    z-index: 3;
+    margin-top: 2vh;
+}
