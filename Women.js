@@ -298,7 +298,7 @@ let person11 = {
 
 
 
-// Code start*******************************************************************************************************************************************************************
+// Quiz code start*******************************************************************************************************************************************************************
 // *****************************************************************************************************************************************************************************
 // start some variables globally -outside of functions and loops etc- to populate inside the functions later
 
@@ -485,3 +485,23 @@ function answerB_clicked() {
 		let answerB = document.getElementById("answerB").value;
   checkAnswer(answerB);
 }
+
+
+
+
+
+// SEARCH BAR ******************************************************************************************************
+// *****************************************************************************************************************
+const f = document.getElementById('form');
+const q = document.getElementById('query');
+const google = 'https://www.google.com/search?q=site%3A+';
+const site = 'mollyrushton.github.io/christmas-cfg-project';
+
+function submitted(event) {
+  event.preventDefault();
+  const url = google + site + '+' + q.value;
+  const win = window.open(url, '_blank');
+  win.focus();
+}
+
+f.addEventListener('submit', submitted);
