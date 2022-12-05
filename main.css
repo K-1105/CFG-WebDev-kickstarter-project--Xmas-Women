@@ -7,6 +7,7 @@ body {
 /* NAVBAR******************************************************************************************* */
 .navbar {
     font-family: 'Poppins';
+    font-weight: 300;
     color: rgb(229, 221, 204);
     z-index: 3;
     --bs-navbar-padding-y: 0.0rem
@@ -87,6 +88,7 @@ body {
 
 .header p {
     font-family: 'Poppins';
+    font-weight: 300;
     padding-top: 3vh;
     padding-bottom: 3vh;
     font-size: 2vh;
@@ -271,7 +273,8 @@ button {
     border: black solid 0.2rem;
     color: black;
     font-size: 2.5vh;
-    font-family: Poppins;
+    font-family: 'Poppins';
+    font-weight: 300;
     border-radius: 0.75rem;
     z-index: 3;
     }
@@ -307,7 +310,8 @@ footer {
     text-align: center;
     color: #4a0e24;
     font-size: 1.5vh;
-    font-family: Poppins; 
+    font-family: 'Poppins';
+    font-weight: 300;
     background-size: cover;
     background-image: url("assets/snow-floor2.png");
     background-repeat: no-repeat;
@@ -503,7 +507,8 @@ color: rgb(229, 221, 204);
     }
 
 .contentP {
-        font-family:'Poppins';
+    font-family: 'Poppins';
+    font-weight: 300;
         font-size: 1.2rem;
         color: rgb(229, 221, 204);
         text-align: left;
