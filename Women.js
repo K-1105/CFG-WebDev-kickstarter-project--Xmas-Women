@@ -201,7 +201,7 @@ let person8 = {
   last_name: "Maathai",
   famous_for: "being the first African woman to receive a Nobel Peace Prize, which was for 'contribution to sustainable development, democracy and peace",
   dob: Date("1910-04-01").toDateString,
-  dod: Date("2011-19-25").toDateString,
+  dod: Date("2011-09-25").toDateString,
   age_at_death: 71,
   famous_decade: "1980s",
   zodiac_sign: "Aries",
