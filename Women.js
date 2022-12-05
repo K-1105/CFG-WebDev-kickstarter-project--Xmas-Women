@@ -451,9 +451,6 @@ function adjustScore(isCorrect) {
 
   // Code to new page when score of 12 is reached***************************************************************************
   if (currentScore == 12) {
-
-    document.getElementById("score").style.backgroundColor = "rgb(252, 189, 0)";
-    document.getElementById("score").style.color = "#0e264a";
     alert("You win!");
 
     setInterval(() => {
