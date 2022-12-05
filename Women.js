@@ -451,11 +451,11 @@ function adjustScore(isCorrect) {
 
   // Code to new page when score of 12 is reached***************************************************************************
   if (currentScore == 12) {
-    alert("You win!");
+    alert("You win! let's go to your bonus bio...");
 
     setInterval(() => {
       window.location.href = "bonus.html";
-    }, 1800);
+    }, 1000);
 
   } 
 }
