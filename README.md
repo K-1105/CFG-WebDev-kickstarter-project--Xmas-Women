@@ -8,7 +8,7 @@
 ## The 12 Day of women who sleighed 		:woman_technologist::woman_health_worker::woman_student::woman_judge::woman_with_headscarf::woman_cook::woman_factory_worker::woman_office_worker::woman_scientist::woman_singer::woman_artist::woman_astronaut:
 
 
-This website has been created by begginners on the **Code First: Girls** web dev coding kickstarter course, sponsored by TRAPDOOR Labs UK.
+This website has been created by beginners on the **Code First: Girls** web dev coding kickstarter course, sponsored by TRAPDOOR Labs UK.
 
 
 The site uses HTML, CSS and Javascript to provide:
