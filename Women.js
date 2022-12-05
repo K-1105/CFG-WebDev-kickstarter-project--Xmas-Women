@@ -271,8 +271,8 @@ let person10 = {
 }
 
 
-let person10 = {
-  photo: "assets/Navratilova door.png",
+let person11 = {
+  photo: "assets/Ginsburg door.png",
   first_name: "Ruth",
   last_name: "Bader Ginsburg",
   famous_for: "spending a lifetime flourishing in the face of adversity before being appointed a Supreme Court justice, where she successfully fought against gender discrimination",
@@ -284,24 +284,25 @@ let person10 = {
   birth_place: "Washington, D.C., United States",
   profession: "Associate justice of the Supreme Court",
   height: null,
-  maiden_name: "Šubertová",
+  maiden_name: null,
   aka: null,
   books: "'My own words'",
   quotes: [
-    "'The mark of great sportsmen is not how good they are at their best, but how good they are their worst.'",
-    "'The better I get, the more I realize how much better I can get.'",
-    "'Just go out there and do what you have to do.'"
+    "'Fight for the things that you care about, but do it in a way that will lead others to join you.'",
+    "'Real change, enduring change, happens one step at a time'",
+    "'Justices continue to think and can change. I am ever hopeful that if the court has a blind spot today, its eyes will be open tomorrow'"
   ],
-  number_of_siblings: 2,
+  number_of_siblings: null,
   school:  "Columbia Law School",
 }
+
 
 
 // Code start*******************************************************************************************************************************************************************
 // *****************************************************************************************************************************************************************************
 // start some variables globally -outside of functions and loops etc- to populate inside the functions later
 
-let people = [person1, person2, person3, person4, person5, person6, person7, person8, person9, person10];
+let people = [person1, person2, person3, person4, person5, person6, person7, person8, person9, person10, person11];
 let ques;
 let ans;
 let personRight;
