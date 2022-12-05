@@ -271,6 +271,32 @@ let person10 = {
 }
 
 
+let person10 = {
+  photo: "assets/Navratilova door.png",
+  first_name: "Ruth",
+  last_name: "Bader Ginsburg",
+  famous_for: "spending a lifetime flourishing in the face of adversity before being appointed a Supreme Court justice, where she successfully fought against gender discrimination",
+  dob: Date("1933-03-15").toDateString,
+  dod: Date("2020-09-18"),
+  age_at_death: 87,
+  famous_decade: "1990s",
+  zodiac_sign: "Pisces",
+  birth_place: "Washington, D.C., United States",
+  profession: "Associate justice of the Supreme Court",
+  height: null,
+  maiden_name: "Šubertová",
+  aka: null,
+  books: "'My own words'",
+  quotes: [
+    "'The mark of great sportsmen is not how good they are at their best, but how good they are their worst.'",
+    "'The better I get, the more I realize how much better I can get.'",
+    "'Just go out there and do what you have to do.'"
+  ],
+  number_of_siblings: 2,
+  school:  "Columbia Law School",
+}
+
+
 // Code start*******************************************************************************************************************************************************************
 // *****************************************************************************************************************************************************************************
 // start some variables globally -outside of functions and loops etc- to populate inside the functions later

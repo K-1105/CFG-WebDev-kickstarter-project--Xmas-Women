@@ -2,7 +2,7 @@
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/MollyRushton/christmas-cfg-project"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/MollyRushton/christmas-cfg-project"><img alt="GitHub repo file count" src="https://img.shields.io/github/directory-file-count/MollyRushton/christmas-cfg-project">
 
 
-[placeholder for link](https://example.com)
+[link to GitHub pages site](https://mollyrushton.github.io/christmas-cfg-project/)
 
 
 ## The 12 Day of women who sleighed 		:woman_technologist::woman_health_worker::woman_student::woman_judge::woman_with_headscarf::woman_cook::woman_factory_worker::woman_office_worker::woman_scientist::woman_singer::woman_artist::woman_astronaut:
