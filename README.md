@@ -19,6 +19,9 @@ The site uses HTML, CSS and Javascript to provide:
 - A Javascript quiz with code inspired by https://codepen.io/savant/pen/gbaveO
 - Modular components from Bootstrap such as a progress bar https://getbootstrap.com/docs/5.2/components/progress/
 
+🥇	This project awarded the group special commendation for being voted the best on the course:  🥇
+
+![CFG certificate](/assets/small certificate.png)
 
 ![Homepage screenshot](/assets/screenshots/home.png)
 ![Quiz page screenshot](/assets/screenshots/bio.png)
