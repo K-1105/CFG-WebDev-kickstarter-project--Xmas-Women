@@ -21,7 +21,7 @@ The site uses HTML, CSS and Javascript to provide:
 
 🥇	This project awarded the group special commendation for being voted the best on the course:  🥇
 
-![CFG certificate](/assets/small certificate.png)
+![CFG certificate](/assets/small-certificate.png)
 
 ![Homepage screenshot](/assets/screenshots/home.png)
 ![Quiz page screenshot](/assets/screenshots/bio.png)
